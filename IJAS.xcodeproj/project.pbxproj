@@ -14,6 +14,17 @@
 		06FF8E562AA4298700987763 /* IJASTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FF8E552AA4298700987763 /* IJASTests.swift */; };
 		06FF8E602AA4298700987763 /* IJASUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FF8E5F2AA4298700987763 /* IJASUITests.swift */; };
 		06FF8E622AA4298700987763 /* IJASUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FF8E612AA4298700987763 /* IJASUITestsLaunchTests.swift */; };
+		06FF8E6F2AA42E2800987763 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FF8E6E2AA42E2800987763 /* AboutView.swift */; };
+		06FF8E712AA4B84700987763 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FF8E702AA4B84700987763 /* HomeView.swift */; };
+		06FF8E732AA4B87900987763 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FF8E722AA4B87900987763 /* SideMenu.swift */; };
+		06FF8E752AA4B8A400987763 /* SideMenuRowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FF8E742AA4B8A400987763 /* SideMenuRowType.swift */; };
+		06FF8E772AA4B8DE00987763 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FF8E762AA4B8DE00987763 /* SideMenuView.swift */; };
+		06FF8E792AA4B97400987763 /* MainTabbedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FF8E782AA4B97400987763 /* MainTabbedView.swift */; };
+		06FF8E7B2AA4D79D00987763 /* AnnoucementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FF8E7A2AA4D79D00987763 /* AnnoucementsView.swift */; };
+		06FF8E7D2AA4E9A700987763 /* ResourcesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FF8E7C2AA4E9A700987763 /* ResourcesView.swift */; };
+		06FF8E7F2AA4EEA900987763 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FF8E7E2AA4EEA900987763 /* LoginView.swift */; };
+		06FF8E812AA4F16000987763 /* LoginContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FF8E802AA4F16000987763 /* LoginContentView.swift */; };
+		06FF8E832AA4F83500987763 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FF8E822AA4F83500987763 /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +55,17 @@
 		06FF8E5B2AA4298700987763 /* IJASUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IJASUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		06FF8E5F2AA4298700987763 /* IJASUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IJASUITests.swift; sourceTree = "<group>"; };
 		06FF8E612AA4298700987763 /* IJASUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IJASUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		06FF8E6E2AA42E2800987763 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		06FF8E702AA4B84700987763 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		06FF8E722AA4B87900987763 /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
+		06FF8E742AA4B8A400987763 /* SideMenuRowType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuRowType.swift; sourceTree = "<group>"; };
+		06FF8E762AA4B8DE00987763 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
+		06FF8E782AA4B97400987763 /* MainTabbedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbedView.swift; sourceTree = "<group>"; };
+		06FF8E7A2AA4D79D00987763 /* AnnoucementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnoucementsView.swift; sourceTree = "<group>"; };
+		06FF8E7C2AA4E9A700987763 /* ResourcesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesView.swift; sourceTree = "<group>"; };
+		06FF8E7E2AA4EEA900987763 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		06FF8E802AA4F16000987763 /* LoginContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginContentView.swift; sourceTree = "<group>"; };
+		06FF8E822AA4F83500987763 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +118,19 @@
 			children = (
 				06FF8E442AA4298500987763 /* IJASApp.swift */,
 				06FF8E462AA4298500987763 /* ContentView.swift */,
+				06FF8E6E2AA42E2800987763 /* AboutView.swift */,
 				06FF8E482AA4298700987763 /* Assets.xcassets */,
 				06FF8E4A2AA4298700987763 /* Preview Content */,
+				06FF8E702AA4B84700987763 /* HomeView.swift */,
+				06FF8E722AA4B87900987763 /* SideMenu.swift */,
+				06FF8E742AA4B8A400987763 /* SideMenuRowType.swift */,
+				06FF8E762AA4B8DE00987763 /* SideMenuView.swift */,
+				06FF8E782AA4B97400987763 /* MainTabbedView.swift */,
+				06FF8E7A2AA4D79D00987763 /* AnnoucementsView.swift */,
+				06FF8E7C2AA4E9A700987763 /* ResourcesView.swift */,
+				06FF8E802AA4F16000987763 /* LoginContentView.swift */,
+				06FF8E7E2AA4EEA900987763 /* LoginView.swift */,
+				06FF8E822AA4F83500987763 /* WebView.swift */,
 			);
 			path = IJAS;
 			sourceTree = "<group>";
@@ -257,8 +290,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06FF8E752AA4B8A400987763 /* SideMenuRowType.swift in Sources */,
+				06FF8E792AA4B97400987763 /* MainTabbedView.swift in Sources */,
+				06FF8E832AA4F83500987763 /* WebView.swift in Sources */,
+				06FF8E772AA4B8DE00987763 /* SideMenuView.swift in Sources */,
 				06FF8E472AA4298500987763 /* ContentView.swift in Sources */,
+				06FF8E7D2AA4E9A700987763 /* ResourcesView.swift in Sources */,
+				06FF8E712AA4B84700987763 /* HomeView.swift in Sources */,
+				06FF8E732AA4B87900987763 /* SideMenu.swift in Sources */,
+				06FF8E6F2AA42E2800987763 /* AboutView.swift in Sources */,
+				06FF8E812AA4F16000987763 /* LoginContentView.swift in Sources */,
+				06FF8E7F2AA4EEA900987763 /* LoginView.swift in Sources */,
 				06FF8E452AA4298500987763 /* IJASApp.swift in Sources */,
+				06FF8E7B2AA4D79D00987763 /* AnnoucementsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
