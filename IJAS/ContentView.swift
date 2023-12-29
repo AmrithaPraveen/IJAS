@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  IJAS
+//  IJAS APP
 //
 //  Created by Amritha Praveen on 9/2/23.
 //
