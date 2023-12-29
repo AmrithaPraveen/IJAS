@@ -15,8 +15,15 @@ struct MainTabbedView: View {
                     .tag(1)
                 AnnouncementsView(presentSideMenu: $presentSideMenu)
                     .tag(2)
-                ResourcesView(presentSideMenu: $presentSideMenu)
+                StudentView(presentSideMenu: $presentSideMenu)
                     .tag(3)
+                NewsletterView(presentSideMenu: $presentSideMenu)
+                    .tag(4)
+                LoginView(presentSideMenu: $presentSideMenu)
+                    .tag(5)
+                
+//                ProjectView(presentSideMenu: $presentSideMenu)
+//                    .tag(5)
 //                LoginContentView()
 //                    .tag(4)
             }

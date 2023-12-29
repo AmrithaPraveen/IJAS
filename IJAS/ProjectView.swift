@@ -9,14 +9,12 @@ import Foundation
 import SwiftUI
 import MapKit
 
-struct ResourcesView: View {
-    
+struct ProjectView: View {
 //    @Binding var presentSideMenu: Bool
-
-    var body: some View {
+    
+    var body:some View{
         VStack{
 //            HStack{
-//                Button{
 //                Button{
 //                    presentSideMenu.toggle()
 //                } label: {
@@ -26,18 +24,24 @@ struct ResourcesView: View {
 //                }
 //                Spacer()
 //
-//        }
-
-            HStack{
-                WebView(url: URL(string: "https://sites.google.com/ijas.org/ijas/students/resources")!)
-                
-            }
-    
-        }
-        .padding(.horizontal, 24)
-
+//            }
+            Text("Project Directory").font(.title)
+            List{
             
-        }
+                HStack{
+                    
+                    Text("Project 1")
+                    Spacer()
+                    Text("Botany")
+                    Spacer()
+                    Text ("Name")
+                    Text ("301")
+                }
+            }
+            
+            
+        } .padding(.horizontal, 24)
+
     }
-
-
+    
+}
