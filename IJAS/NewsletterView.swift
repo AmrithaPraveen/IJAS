@@ -21,7 +21,8 @@ struct NewsletterView: View {
             HStack{
                WebView(url: URL(string: "https://sites.google.com/ijas.org/ijas/students/newsletters?authuser=0")!)
 //                Text ("Announcements").font(.largeTitle)
-                //This is just test1 and you are mokkaiu
+
+                //This is just test2
                 
             }
             Spacer()
