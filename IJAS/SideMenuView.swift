@@ -55,7 +55,7 @@ struct SideMenuView: View {
                         Image(imageName)
                             .resizable()
                             .renderingMode(.template)
-                            .foregroundColor(isSelected ? .black : .gray)
+                            .foregroundColor(isSelected ? .green : .gray)
                             .frame(width: 26, height: 26)
                     }
                     .frame(width: 30, height: 30)

@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 import MapKit
 
-struct ResourcesView: View {
+struct ContestView: View {
     
 //    @Binding var presentSideMenu: Bool
 
@@ -29,7 +29,7 @@ struct ResourcesView: View {
 //        }
 
             HStack{
-                WebView(url: URL(string: "https://sites.google.com/ijas.org/ijas/students/resources")!)
+                WebView(url: URL(string: "https://sites.google.com/ijas.org/ijas/students/contests")!)
                 
             }
     
@@ -39,5 +39,6 @@ struct ResourcesView: View {
             
         }
     }
+
 
 

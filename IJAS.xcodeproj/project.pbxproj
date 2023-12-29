@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		061551722AAE285B00BD50DE /* NewsletterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061551712AAE285B00BD50DE /* NewsletterView.swift */; };
+		061551742AAE2BEC00BD50DE /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061551732AAE2BEC00BD50DE /* ProjectView.swift */; };
+		061551762AAE449A00BD50DE /* StudentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061551752AAE449A00BD50DE /* StudentView.swift */; };
+		061551782AAE4BF600BD50DE /* VideosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061551772AAE4BF600BD50DE /* VideosView.swift */; };
+		0615517A2AAE658D00BD50DE /* NoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061551792AAE658D00BD50DE /* NoteView.swift */; };
+		0615517C2AAE665A00BD50DE /* AwardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0615517B2AAE665A00BD50DE /* AwardsView.swift */; };
+		0615517E2AAE66B200BD50DE /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0615517D2AAE66B200BD50DE /* ScheduleView.swift */; };
+		061551802AAE676D00BD50DE /* ContestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0615517F2AAE676D00BD50DE /* ContestView.swift */; };
 		06FF8E452AA4298500987763 /* IJASApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FF8E442AA4298500987763 /* IJASApp.swift */; };
 		06FF8E472AA4298500987763 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FF8E462AA4298500987763 /* ContentView.swift */; };
 		06FF8E492AA4298700987763 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06FF8E482AA4298700987763 /* Assets.xcassets */; };
@@ -49,6 +57,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		061551712AAE285B00BD50DE /* NewsletterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsletterView.swift; sourceTree = "<group>"; };
+		061551732AAE2BEC00BD50DE /* ProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectView.swift; sourceTree = "<group>"; };
+		061551752AAE449A00BD50DE /* StudentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentView.swift; sourceTree = "<group>"; };
+		061551772AAE4BF600BD50DE /* VideosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosView.swift; sourceTree = "<group>"; };
+		061551792AAE658D00BD50DE /* NoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteView.swift; sourceTree = "<group>"; };
+		0615517B2AAE665A00BD50DE /* AwardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardsView.swift; sourceTree = "<group>"; };
+		0615517D2AAE66B200BD50DE /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
+		0615517F2AAE676D00BD50DE /* ContestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContestView.swift; sourceTree = "<group>"; };
 		06FF8E412AA4298500987763 /* IJAS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IJAS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06FF8E442AA4298500987763 /* IJASApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IJASApp.swift; sourceTree = "<group>"; };
 		06FF8E462AA4298500987763 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -140,6 +156,14 @@
 				06FF8E802AA4F16000987763 /* LoginContentView.swift */,
 				06FF8E7E2AA4EEA900987763 /* LoginView.swift */,
 				06FF8E822AA4F83500987763 /* WebView.swift */,
+				061551712AAE285B00BD50DE /* NewsletterView.swift */,
+				061551732AAE2BEC00BD50DE /* ProjectView.swift */,
+				061551752AAE449A00BD50DE /* StudentView.swift */,
+				061551772AAE4BF600BD50DE /* VideosView.swift */,
+				061551792AAE658D00BD50DE /* NoteView.swift */,
+				0615517B2AAE665A00BD50DE /* AwardsView.swift */,
+				0615517D2AAE66B200BD50DE /* ScheduleView.swift */,
+				0615517F2AAE676D00BD50DE /* ContestView.swift */,
 			);
 			path = IJAS;
 			sourceTree = "<group>";
@@ -309,17 +333,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				06FF8E752AA4B8A400987763 /* SideMenuRowType.swift in Sources */,
+				061551802AAE676D00BD50DE /* ContestView.swift in Sources */,
 				06FF8E792AA4B97400987763 /* MainTabbedView.swift in Sources */,
 				06FF8E832AA4F83500987763 /* WebView.swift in Sources */,
 				06FF8E772AA4B8DE00987763 /* SideMenuView.swift in Sources */,
 				06FF8E472AA4298500987763 /* ContentView.swift in Sources */,
+				0615517E2AAE66B200BD50DE /* ScheduleView.swift in Sources */,
+				0615517C2AAE665A00BD50DE /* AwardsView.swift in Sources */,
+				061551722AAE285B00BD50DE /* NewsletterView.swift in Sources */,
 				06FF8E7D2AA4E9A700987763 /* ResourcesView.swift in Sources */,
 				06FF8E712AA4B84700987763 /* HomeView.swift in Sources */,
+				0615517A2AAE658D00BD50DE /* NoteView.swift in Sources */,
 				06FF8E732AA4B87900987763 /* SideMenu.swift in Sources */,
 				06FF8E6F2AA42E2800987763 /* AboutView.swift in Sources */,
+				061551782AAE4BF600BD50DE /* VideosView.swift in Sources */,
 				06FF8E812AA4F16000987763 /* LoginContentView.swift in Sources */,
 				06FF8E7F2AA4EEA900987763 /* LoginView.swift in Sources */,
+				061551742AAE2BEC00BD50DE /* ProjectView.swift in Sources */,
 				06FF8E452AA4298500987763 /* IJASApp.swift in Sources */,
+				061551762AAE449A00BD50DE /* StudentView.swift in Sources */,
 				06FF8E7B2AA4D79D00987763 /* AnnoucementsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
