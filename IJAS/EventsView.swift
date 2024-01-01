@@ -7,19 +7,18 @@
 //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
 import SwiftUI
 
-struct AwardsView: View {
+struct EventsView: View {
     var body: some View {
         VStack{
-            Text("Awards").font(.title)
+            Text("About")
         }
         
     }
 }
 
-struct AwardsView_Previews: PreviewProvider {
+struct EventsView_Previews: PreviewProvider {
     static var previews: some View {
-        AwardsView()
+        EventsView()
     }
 }
-
 

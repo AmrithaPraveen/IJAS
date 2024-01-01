@@ -25,7 +25,7 @@ struct ProjectView: View {
 //                Spacer()
 //
 //            }
-            Text("Project Directory").font(.title)
+ //           Text("Project Directory").font(.title)
             List{
             
                 HStack{
@@ -41,6 +41,7 @@ struct ProjectView: View {
             
             
         } .padding(.horizontal, 24)
+            .navigationBarTitle("Projects", displayMode: .inline)
 
     }
     

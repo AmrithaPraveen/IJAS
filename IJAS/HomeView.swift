@@ -9,7 +9,7 @@ struct HomeView: View {
         span: .init(latitudeDelta: 0.2, longitudeDelta: 0.2)
     )
     var body: some View {
-        NavigationView{
+        
             VStack{
                 HStack{
                     Button{
@@ -40,9 +40,9 @@ struct HomeView: View {
                 HStack{
                     NavigationLink(destination: ProjectView())
                     {
-                   
+                        
                         IJASButton(label:"Project Directory",buttonColor: .green)
-                     
+                        
                         
                     }
                     
@@ -50,27 +50,27 @@ struct HomeView: View {
                 HStack{
                     NavigationLink(destination: ScheduleView())
                     {
-                   
+                        
                         IJASButton(label:"     Schedule       ",buttonColor: .green)
                         
                     }
                 }
-                    HStack{
-                        NavigationLink(destination: AwardsView())
-                        {
-                 
+                HStack{
+                    NavigationLink(destination: AwardsView())
+                    {
+                        
                         IJASButton(label:"      Awards        ",buttonColor: .green)
-                               
-                            
-                        }
+                        
+                        
                     }
-                    Spacer()
                 }
-                .padding(.horizontal, 24)
                 Spacer()
             }
-            
+            .padding(.horizontal, 24)
+            Spacer()
         }
+        
     }
+
 
 

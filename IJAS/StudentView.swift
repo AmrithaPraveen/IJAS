@@ -1,100 +1,68 @@
+//
+//  StudentView.swift
+//  IJAS
+//
+//  Created by Amritha Praveen on 1/1/24.
+//
+
 import SwiftUI
-import MapKit
-
 struct StudentView: View {
-    
-    @Binding var presentSideMenu: Bool
-    @State var region = MKCoordinateRegion(
-        center: .init(latitude: 39.842_464,longitude: -88.974_295),
-        span: .init(latitudeDelta: 0.2, longitudeDelta: 0.2)
-    )
     var body: some View {
-        NavigationView{
-            VStack{
-                HStack{
-                    Button{
-                        presentSideMenu.toggle()
-                    } label: {
-                        Image("menu")
-                            .resizable()
-                            .frame(width: 32, height: 32)
-                    }
-                    Spacer()
-                }
-                Text ("Students").font(.title)
+        NavigationView {
+            List {
+                Section(header: Text("Helpful Resources").font(.subheadline).foregroundColor(.primary)) {
+                        LinkCard(destination: VideosView(), imageName: "video.fill", label: "How-To Videos")
+                    
 
-                HStack{
-                    NavigationLink(destination: VideosView())
-                    {
-                        Image(systemName: "book.circle")
-                            .foregroundColor(.green)
-                            .imageScale(.large)
-                        IJASButton(label:"How to Videos", buttonColor: .green)
-                            .foregroundColor(.gray)
-                            .font(.headline)
-                        
-                    }
+                        LinkCard(destination: ContestView(), imageName: "trophy.fill", label: "Contests")
+                    
+
+                        LinkCard(destination: HelpSessionView(), imageName: "lightbulb.fill", label: "Help Sessions")
                     
                 }
-                HStack{
-                    NavigationLink(destination: ResourcesView())
-                    {
-                        Image(systemName: "book.circle")
-                            .foregroundColor(.green)
-                            .imageScale(.large)
-                        IJASButton(label:"   Resources   ", buttonColor: .green)
-                            .foregroundColor(.gray)
-                            .font(.headline)
-                        
-                    }
-                }
-                    HStack{
-                        NavigationLink(destination: ContestView())
-                        {
-                            Image(systemName: "book.circle")
-                                .foregroundColor(.green)
-                                .imageScale(.large)
-                            IJASButton(label:"     Contest     ", buttonColor: .green)
-                                .foregroundColor(.green)
-                               
-                                .font(.headline)
-                            
-                        }
-                    }
-                HStack{
-                    NavigationLink(destination: NoteView())
-                    {
-                        Image(systemName: "book.circle")
-                            .foregroundColor(.green)
-                            .imageScale(.large)
-                        IJASButton(label:" Student Notes",buttonColor: .green)
-                            .foregroundColor(.green)
-                            .font(.headline)
-                        
-                    }
-                }
-                    Spacer()
-                }
-                .padding(.horizontal, 24)
-                Spacer()
-            }
-            
-        }
-    }
 
-struct IJASButton:View{
-    let label: String
-    let buttonColor: Color
-    
-    var body: some View{
-        Text(label)
-            .foregroundColor(.white)
-            .padding(.vertical,15)
-            .padding(.horizontal, 40)
-            .background(buttonColor)
-            .cornerRadius(10)
-            .frame(width:280,height:80)
+                Section(header: Text( "Tools").font(.subheadline).foregroundColor(.primary)) {
+                        LinkCard(destination: NotesView(), imageName: "note.text", label: "Student Notes")
+                    
+                }
+
+                Section(header: Text( "Documents").font(.subheadline).foregroundColor(.primary)) {
+                        LinkCard(destination: PolicyManualView(), imageName: "book.fill", label: "Policy Manual")
+                    
+
+                        LinkCard(destination: EndorsementFormsView(), imageName: "doc.text.fill", label: "Endorsement Forms")
+                    
+                }
+            }
+            .listStyle(InsetGroupedListStyle()) // Apply a more modern list style
+            .navigationBarTitle("Student", displayMode: .inline)
+        }
     }
 }
 
+
+struct PolicyManualView: View {
+    var body: some View {
+        WebView(url: URL(string:"https://drive.google.com/drive/folders/1PQ6FKTtrmuW3uDre93ju5vr49Dklxvyb")!)
+            .navigationBarTitle("Policy Manual", displayMode: .inline)    }
+}
+
+struct EndorsementFormsView: View {
+    var body: some View {
+
+        WebView(url: URL(string:"https://drive.google.com/drive/folders/0B72J70LPcSv3SUk5NWZJNDhlTEk?resourcekey=0-W8o22y3QBW2ZMBXXprvrqA")!)
+            .navigationBarTitle("Endorsement Forms", displayMode: .inline)
+    }
+}
+
+
+
+
+
+
+struct StudentView_Previews: PreviewProvider {
+    static var previews: some View {
+        StudentView()
+    }
+}
 

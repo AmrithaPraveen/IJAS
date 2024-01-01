@@ -9,25 +9,31 @@ struct MainTabbedView: View {
         ZStack{
             
             TabView(selection: $selectedSideMenuTab) {
-                ContentView(presentSideMenu: $presentSideMenu)
+                AboutTestView(presentSideMenu: $presentSideMenu)
                     .tag(0)
                 HomeView(presentSideMenu: $presentSideMenu)
                     .tag(1)
-                AnnouncementsView(presentSideMenu: $presentSideMenu)
+                NewsletterTestView(presentSideMenu: $presentSideMenu)
                     .tag(2)
-                StudentView(presentSideMenu: $presentSideMenu)
+                StudentTestView(presentSideMenu: $presentSideMenu)
                     .tag(3)
-                NewsletterView(presentSideMenu: $presentSideMenu)
+                NewsletterTestView(presentSideMenu: $presentSideMenu)
                     .tag(4)
                 LoginView(presentSideMenu: $presentSideMenu)
                     .tag(5)
+//                StudentBoardView(presentSideMenu: $presentSideMenu)
+//                    .tag(6)
+//                StudentBoardView(presentSideMenu: $presentSideMenu)
+//                    .tag(7)
                 
 //                ProjectView(presentSideMenu: $presentSideMenu)
 //                    .tag(5)
 //                LoginContentView()
 //                    .tag(4)
             }
-            
+            .tabViewStyle(.page(indexDisplayMode: .never))
+           // .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .never))
+
             SideMenu(isShowing: $presentSideMenu, content: AnyView(SideMenuView(selectedSideMenuTab: $selectedSideMenuTab, presentSideMenu: $presentSideMenu)))
         }
     }

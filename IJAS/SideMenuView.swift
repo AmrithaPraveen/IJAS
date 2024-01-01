@@ -27,7 +27,7 @@ struct SideMenuView: View {
                     Spacer()
                 }
                 .padding(.top, 100)
-                .frame(width: 270)
+                .frame(maxWidth: .infinity)
                 .background(
                     Color.white
                 )

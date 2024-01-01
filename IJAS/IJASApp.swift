@@ -15,26 +15,28 @@ struct IJASApp: App {
 
     var body: some Scene {
         WindowGroup {
-            MainTabbedView()
+            //MainTabbedView()
+            ContentView()
         }
     }
 }
 
 class AppDelegate: NSObject, UIApplicationDelegate {
-  func application(_ application: UIApplication,
-                   didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-    FirebaseApp.configure()
-      
-      Auth.auth().addStateDidChangeListener { auth, user in
-          if user == nil {
-              print("User is not logged in")
-              // User is not logged in
-          } else {
-              print("User logged in")
-              // User is logged in
-          }
-      }
+    func application(_ application: UIApplication,
+                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        FirebaseApp.configure()
+        
 
-    return true
-  }
+        Auth.auth().addStateDidChangeListener { auth, user in
+            if user == nil {
+                print("User is not logged in")
+                // User is not logged in
+            } else {
+                print("User logged in")
+                // User is logged in
+            }
+        }
+        
+        return true
+    }
 }

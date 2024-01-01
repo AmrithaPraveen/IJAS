@@ -1,7 +1,7 @@
 import SwiftUI
 import MapKit
 
-struct NewsletterView: View {
+struct NewsletterTestView: View {
     
     @Binding var presentSideMenu: Bool
 
@@ -19,17 +19,15 @@ struct NewsletterView: View {
                 
         }
             HStack{
-               WebView(url: URL(string: "https://sites.google.com/ijas.org/ijas/students/newsletters?authuser=0")!)
+               WebView(url: URL(string: "https://sites.google.com/ijas.org/ijas/communications/announcements?authuser=0")!)
 //                Text ("Announcements").font(.largeTitle)
-
-                //This is just test2
                 
             }
             Spacer()
         
         }
         .padding(.horizontal, 24)
-
+        .navigationBarHidden(true) 
             
         }
     }
