@@ -16,7 +16,7 @@ struct ScheduleView: View {
                     Section(header: Text(formattedDate(date))
                                 .font(.system(size: 20, weight: .bold, design: .default))
                                 .padding(.vertical, 8)
-                                .foregroundColor(.green)
+                                .foregroundColor(.primary)
                     ) {
                         ForEach(events) { schedule in
                             NavigationLink(destination: ScheduleDetail(schedule: schedule)) {
@@ -46,7 +46,8 @@ struct ScheduleView: View {
                 viewModel.stopListening()
             }
             .listStyle(GroupedListStyle())
-            .navigationTitle("Schedule")
+            .navigationBarTitle("Schedule", displayMode: .inline)
+            
         }
     }
 

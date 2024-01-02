@@ -83,6 +83,14 @@ struct ProjectListView: View {
         var body: some View {
             VStack(alignment: .leading, spacing: 16) {
                 Group {
+                    Text("Project #  \(project.id)")
+                        .font(.system(size: 18, weight: .bold))
+                        .foregroundColor(.white)
+                        .padding(4)
+                        .background(
+                        RoundedRectangle(cornerRadius: 4)
+                        .foregroundColor(.green)
+                        )
            
                     Text("Project Name: \(project.ProjectName)")
                         .font(.headline)
