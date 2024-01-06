@@ -48,6 +48,8 @@
 		9B47AF762B438742002F8100 /* NewslettersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B47AF752B438742002F8100 /* NewslettersView.swift */; };
 		9B47AF782B4387D5002F8100 /* NewlettersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B47AF772B4387D5002F8100 /* NewlettersViewModel.swift */; };
 		9B47AF7A2B43A0D3002F8100 /* TeachersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B47AF792B43A0D3002F8100 /* TeachersView.swift */; };
+		9B47AF7C2B49CE41002F8100 /* PosterProjectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B47AF7B2B49CE41002F8100 /* PosterProjectViewModel.swift */; };
+		9B47AF7E2B49CEB6002F8100 /* PosterProjectListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B47AF7D2B49CEB6002F8100 /* PosterProjectListView.swift */; };
 		9B631D6D2B40C55A008225A8 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 9B631D6C2B40C55A008225A8 /* FirebaseAnalytics */; };
 		9B631D6F2B40C55A008225A8 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 9B631D6E2B40C55A008225A8 /* FirebaseAnalyticsOnDeviceConversion */; };
 		9B631D712B40C55A008225A8 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9B631D702B40C55A008225A8 /* FirebaseAnalyticsSwift */; };
@@ -139,6 +141,8 @@
 		9B47AF752B438742002F8100 /* NewslettersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewslettersView.swift; sourceTree = "<group>"; };
 		9B47AF772B4387D5002F8100 /* NewlettersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewlettersViewModel.swift; sourceTree = "<group>"; };
 		9B47AF792B43A0D3002F8100 /* TeachersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeachersView.swift; sourceTree = "<group>"; };
+		9B47AF7B2B49CE41002F8100 /* PosterProjectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterProjectViewModel.swift; sourceTree = "<group>"; };
+		9B47AF7D2B49CEB6002F8100 /* PosterProjectListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterProjectListView.swift; sourceTree = "<group>"; };
 		9B631D8F2B4203E8008225A8 /* AboutTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutTestView.swift; sourceTree = "<group>"; };
 		9B631D912B420654008225A8 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		9B631D932B420767008225A8 /* IJAS2024View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IJAS2024View.swift; sourceTree = "<group>"; };
@@ -252,7 +256,9 @@
 				9B631D9B2B421B56008225A8 /* AnnouncementsView.swift */,
 				9B631D9D2B42313A008225A8 /* Project.swift */,
 				9B631D9F2B423226008225A8 /* ProjectListView.swift */,
+				9B47AF7D2B49CEB6002F8100 /* PosterProjectListView.swift */,
 				9B631DA12B4232B9008225A8 /* ProjectViewModel.swift */,
+				9B47AF7B2B49CE41002F8100 /* PosterProjectViewModel.swift */,
 				9B47AF612B430FD4002F8100 /* StudentView.swift */,
 				9B47AF632B43182B002F8100 /* VideoViewModel.swift */,
 				9B47AF652B431D29002F8100 /* HelpSessionViewModel.swift */,
@@ -467,6 +473,7 @@
 				06FF8E832AA4F83500987763 /* WebView.swift in Sources */,
 				9B631D902B4203E8008225A8 /* AboutTestView.swift in Sources */,
 				06FF8E772AA4B8DE00987763 /* SideMenuView.swift in Sources */,
+				9B47AF7E2B49CEB6002F8100 /* PosterProjectListView.swift in Sources */,
 				06FF8E472AA4298500987763 /* ContentView.swift in Sources */,
 				9B1973D12B3FBBDF00658AEA /* StudentBoard.swift in Sources */,
 				9B47AF722B43574F002F8100 /* ScheduleViewModel.swift in Sources */,
@@ -474,6 +481,7 @@
 				9B47AF682B431E79002F8100 /* HelpSessionView.swift in Sources */,
 				9B47AF762B438742002F8100 /* NewslettersView.swift in Sources */,
 				9B631D942B420767008225A8 /* IJAS2024View.swift in Sources */,
+				9B47AF7C2B49CE41002F8100 /* PosterProjectViewModel.swift in Sources */,
 				06FF8E7D2AA4E9A700987763 /* ResourcesView.swift in Sources */,
 				9B47AF6C2B43274F002F8100 /* ContactsView.swift in Sources */,
 				06FF8E712AA4B84700987763 /* HomeView.swift in Sources */,
@@ -658,7 +666,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"IJAS/Preview Content\"";
-				DEVELOPMENT_TEAM = H5X9267S3J;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -688,7 +696,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"IJAS/Preview Content\"";
-				DEVELOPMENT_TEAM = H5X9267S3J;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

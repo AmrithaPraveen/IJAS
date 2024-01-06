@@ -3,6 +3,7 @@ import SwiftUI
 struct NotesView: View {
     @State private var notes: [String] = []
     @State private var newNote: String = ""
+    @State private var isEditing: Bool = false
 
     var body: some View {
         NavigationView {
@@ -13,6 +14,9 @@ struct NotesView: View {
                     }
                     .onDelete(perform: deleteNote)
                 }
+                .listStyle(PlainListStyle())
+                .navigationBarTitle("Notes",displayMode: .inline)
+                .navigationBarItems(trailing: EditButton())
 
                 HStack {
                     TextField("New Note", text: $newNote)
@@ -29,7 +33,6 @@ struct NotesView: View {
 
                 Spacer()
             }
-            .navigationBarTitle("Notes", displayMode: .inline)
             .onAppear {
                 loadNotes()
             }

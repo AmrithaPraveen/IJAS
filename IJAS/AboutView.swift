@@ -40,10 +40,10 @@ struct AboutView: View {
                 Image("ijaslogo")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 100, height: 100)
+                    .frame(width: 200, height: 100)
                     .padding()
-                    .background(Color.green)
-                    .cornerRadius(15) // Updated corner radius
+                    //.background(Color.green)
+                    //.cornerRadius(15) // Updated corner radius
                 
                 // Title "IJAS" with Bold Style and Larger Font
                 Text("IJAS")

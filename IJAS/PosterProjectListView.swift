@@ -1,17 +1,24 @@
+//
+//  PosterProjectListView.swift
+//  IJAS
+//
+//  Created by Amritha Praveen on 1/6/24.
+//
+
 import Foundation
 import SwiftUI
 
-struct ProjectListView: View {
+struct PosterProjectListView: View {
     @State private var searchQuery: String = ""
 
-    @StateObject private var viewModel = ProjectViewModel()
+    @StateObject private var viewModel = PosterProjectViewModel()
 
     var filteredProjects: [Project] {
         if searchQuery.isEmpty {
-            return viewModel.projects
+            return viewModel.posterprojects
         } else {
             // Filter projects based on search criteria (student name, project name, category, school name, etc.)
-            return viewModel.projects.filter { project in
+            return viewModel.posterprojects.filter { project in
                 project.ProjectName.localizedCaseInsensitiveContains(searchQuery) ||
                 project.Category.localizedCaseInsensitiveContains(searchQuery) ||
                 project.FirstStudentName.localizedCaseInsensitiveContains(searchQuery) ||
@@ -46,7 +53,7 @@ struct ProjectListView: View {
                         //ProjectRow(project: project)
                     }
                 }
-                .navigationBarTitle("Paper Projects", displayMode: .inline)
+                .navigationBarTitle("Poster Projects", displayMode: .inline)
                 .onAppear {
                     viewModel.listentoRealtimeDatabase()
                 }

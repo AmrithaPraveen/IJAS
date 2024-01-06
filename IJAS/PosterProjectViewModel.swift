@@ -1,19 +1,19 @@
 //
-//  ProjectModelView.swift
+//  PosterProjectViewModel.swift
 //  IJAS
 //
-//  Created by Amritha Praveen on 12/31/23.
+//  Created by Amritha Praveen on 1/6/24.
 //
 
 import Foundation
 import FirebaseDatabase
-final class ProjectViewModel: ObservableObject {
-    @Published var projects: [Project] = []
+final class PosterProjectViewModel: ObservableObject {
+    @Published var posterprojects: [Project] = []
     private var hasLoadedData = false
 
     private lazy var databasePath: DatabaseReference? = {
 
-        let ref = Database.database().reference().child("1xAh9SNk0wZA0Rc_mlOwBGC12DWgonbezX4wZGVKw3eo").child("paperprojects")
+        let ref = Database.database().reference().child("1xAh9SNk0wZA0Rc_mlOwBGC12DWgonbezX4wZGVKw3eo").child("posterprojects")
         return ref
     }()
     
@@ -42,7 +42,7 @@ final class ProjectViewModel: ObservableObject {
                 do {
                     let birdData = try JSONSerialization.data(withJSONObject: json)
                     let bird = try self.decoder.decode(Project.self, from: birdData)
-                    self.projects.append(bird)
+                    self.posterprojects.append(bird)
                     self.hasLoadedData = true
 
                     //print (students.count)
@@ -52,7 +52,7 @@ final class ProjectViewModel: ObservableObject {
                     print("an error occurred", error)
                 }
               }
-        self.projects.sort { $0.id < $1.id }
+        self.posterprojects.sort { $0.id < $1.id }
 
 
     }

@@ -37,7 +37,7 @@ struct IJAS2024View: View {
 
                 // Navigation Links with Improved Design
                 LinkCard(destination: ProjectListView(), imageName: "doc.text", label: "Project Directory - Paper")
-                LinkCard(destination: ProjectListView(), imageName: "doc.text", label: "Project Directory - Poster")
+                LinkCard(destination: PosterProjectListView(), imageName: "doc.text", label: "Project Directory - Poster")
 
                 LinkCard(destination: ScheduleView(), imageName: "calendar", label: "Schedule")
 

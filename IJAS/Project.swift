@@ -9,10 +9,11 @@ import Foundation
 
 struct Project: Identifiable, Codable {
     var id: String
-    var Region: Int
+    var Region: String
     var ProjectName: String
+    var ProjectNumber: String
     var Category: String
-    var SchoolId: Int
+    var SchoolId: String
     var SchoolName: String
     var FirstStudentName: String
     var SecondStudentName: String
