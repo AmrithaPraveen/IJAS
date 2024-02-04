@@ -38,7 +38,7 @@ struct HomeView: View {
                 }
                 Spacer()
                 HStack{
-                    NavigationLink(destination: ProjectView())
+                    NavigationLink(destination: ProjectListView())
                     {
                         
                         IJASButton(label:"Project Directory",buttonColor: .green)
@@ -74,3 +74,18 @@ struct HomeView: View {
 
 
 
+struct IJASButton:View{
+    let label: String
+    let buttonColor: Color
+    
+    var body: some View{
+        Text(label)
+            .foregroundColor(.white)
+            .padding(.vertical,15)
+            .padding(.horizontal, 40)
+            .background(buttonColor)
+            .cornerRadius(10)
+            .frame(width:280,height:80)
+    }
+    
+}

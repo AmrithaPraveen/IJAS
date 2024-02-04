@@ -1,11 +1,3 @@
-//
-//  ContactsView.swift
-//  IJAS
-//
-//  Created by Amritha Praveen on 1/1/24.
-//
-
-import Foundation
 import SwiftUI
 
 struct SocialMediaLink: Identifiable {
@@ -14,8 +6,6 @@ struct SocialMediaLink: Identifiable {
     let link: String
 }
 
-
-
 struct ContactsView: View {
     let socialMediaLinks: [SocialMediaLink] = [
         SocialMediaLink(platform: "Facebook", link: "https://www.facebook.com/IJASorg"),
@@ -23,36 +13,41 @@ struct ContactsView: View {
         SocialMediaLink(platform: "Instagram", link: "https://www.instagram.com/ijas_il/?hl=en"),
         SocialMediaLink(platform: "YouTube", link: "https://www.youtube.com")
     ]
-    
-    
+
     var body: some View {
         NavigationView {
             List {
                 Section(header: Text("Social Media Links").font(.subheadline)) {
                     ForEach(socialMediaLinks) { link in
-                        Link(destination: URL(string: link.link)!) {
-                            Text(link.platform)
+                        if let url = URL(string: link.link) {
+                            Link(destination: url) {
+                                Text(link.platform)
+                            }
                         }
                     }
                 }
+
                 Section(header: Text("Student Board").font(.subheadline)) {
-                    
-                    NavigationLink(destination: StudentBoardView() ){
+                    NavigationLink(destination: StudentBoardView()) {
                         Text("Student Board Contacts")
                     }
-//                    NavigationLink(destination: StudentBoardChatView()) {
-//                        Text("Chat with a student board member")
-//                    }
+
+                    // Uncomment the following section if you need it
+                    /*
+                    NavigationLink(destination: StudentBoardChatView()) {
+                        Text("Chat with a student board member")
+                    }
+                    */
                 }
-                .navigationBarTitle("Contacts",displayMode: .inline)
             }
+            .navigationBarTitle("Contacts", displayMode: .inline)
         }
     }
 }
-
 
 struct ContactsView_Previews: PreviewProvider {
     static var previews: some View {
         ContactsView()
     }
 }
+

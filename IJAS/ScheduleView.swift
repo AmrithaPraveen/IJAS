@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct ScheduleView: View {
-    @StateObject private var viewModel = ScheduleViewModel()
+    @ObservedObject private var viewModel = ScheduleViewModel()
 
     var dateFormatter: DateFormatter {
         let formatter = DateFormatter()

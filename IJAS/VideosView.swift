@@ -30,7 +30,7 @@ struct VideoItem: Identifiable, Codable {
 }
 
 struct VideosView: View {
-    @StateObject private var viewModel = VidoeViewModel()
+    @ObservedObject private var viewModel = VidoeViewModel()
 
 
     var body: some View {

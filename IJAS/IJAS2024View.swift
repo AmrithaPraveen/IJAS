@@ -41,7 +41,7 @@ struct IJAS2024View: View {
 
                 LinkCard(destination: ScheduleView(), imageName: "calendar", label: "Schedule")
 
-                LinkCard(destination: AwardsView(), imageName: "star", label: "Awards")
+                LinkCard(destination: AwardsListView(), imageName: "star", label: "Awards")
 
                 Spacer()
             }
@@ -141,12 +141,7 @@ struct InteractiveMapView_Previews: PreviewProvider {
 
 
 
-struct AwardsView: View {
-    var body: some View {
-        Text("Awards Content Goes Here")
-            .navigationBarTitle("Awards", displayMode: .inline)
-    }
-}
+
 
 struct MapView: View {
     var body: some View {

@@ -1,79 +1,72 @@
-//
-//  ContentView.swift
-//  IJAS APP
-//
-//  Created by Amritha Praveen on 9/2/23.
-//
-
 import SwiftUI
-import FirebaseAuth
 
 struct ContentView: View {
-    @Binding var presentSideMenu: Bool
 
-    
     var body: some View {
-        ZStack {
-            VStack(){
-                HStack{
-                    Button{
-                        presentSideMenu.toggle()
-
-                    } label:{
-                        Image("menu").resizable().frame(width: 32, height: 32)
-                    }
-                    Spacer()
+        TabView {
+            AboutView()
+                .tabItem {
+                    Image(systemName: "info.circle.fill")
+                        .foregroundColor(.green)
+                    Text("About")
                 }
-                ZStack{
-                    Color.green
-                    HStack{
-                        Image("ijaslogo")
-                        Text("IJAS").font(.largeTitle)
-                        
-                    }
-                    .padding(3)
-                    
+            IJAS2024View()
+                .tabItem {
+                    Image(systemName: "doc.text.magnifyingglass")
+                    Text("IJAS 2024")
                 }
-                
-                HStack{
-                    Text("The Illinois Junior Academy of Science exists for the benefit of students in the state of Illinois, by guiding them and hosting several science fairs throughout Illinois, which culminate with the State Exposition. The process students follow when participating gives them insights into the problems faced by scientists and methodologies scientists use. It encourages students to find information concerning new investigations and discoveries in science. It allows students to get experience with scientific equipment, while also allowing them to develop their own investigation beyond the classroom and progress towards a career in STEM")
+            AnnouncementsView()
+                .tabItem {
+                    Image(systemName: "megaphone")
+                        .foregroundColor(.green)
+                    Text("Announcements")
                 }
 
-            }
-            .padding(.horizontal, 24)
-//            .opacity(isLoggedIn ? 1 : 0)
-//
-   
-//            .opacity(isUserLoggingIn ? 1 : 0)
 
+            StudentView()
+                     .tabItem {
+                         Image(systemName: "person.fill")
+                             .foregroundColor(.green)
+                         Text("Student")
+                     }
+            NewslettersView()
+                            .tabItem {
+                                Image(systemName: "newspaper.fill")
+                                    .foregroundColor(.green)
+                                Text("Newsletters")
+                            }
+            TeachersView()
+                          .tabItem {
+                              Image(systemName: "person.3.fill")
+                                  .foregroundColor(.green)
+                              Text("Teachers")
+                          }
+
+            ContactsView()
+                .tabItem {
+                    Image(systemName: "phone")
+                        .foregroundColor(.green)
+                    Text("Contacts")
+                }
             
-        }
-//        .onAppear {
-//            isLoggedIn = Auth.auth().currentUser != nil
-        }
-    }
-    
-    
-
-        
-//        do {
-//            try Auth.auth().createUser(withEmail: email, password: password)
-//            self.isUserLoggingIn = false
-//            self.isLoggedIn = true
-//        } catch {
-//            print(error)
-//        }
-    
 
 
-
-
-
-struct MyPreviewProvider_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView(presentSideMenu: .constant(true))
+        }.padding(.bottom,10)
+            .onAppear {
+                        // Disable scroll edge appearance adaptation
+                        UITabBar.appearance().scrollEdgeAppearance = UITabBarAppearance.init(idiom: .unspecified)
+                    }
     }
 }
-
-
+struct ChatView: View {
+    var body: some View {
+        Text("Chat Content Goes Here")
+            .navigationBarTitle("Chat", displayMode: .inline)
+    }
+}
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
 
